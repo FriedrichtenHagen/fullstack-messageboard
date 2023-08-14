@@ -1,0 +1,34 @@
+:root{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(36, 36, 36);
+}
+#root {
+  max-width: 1280px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messageBoard{
+  height: 500px;
+  width: 500px;
+  border: 1px solid rgba(75, 75, 75, 0.336);
+  background-color: rgb(18, 39, 154);
+  border-radius: 10px;
+}
+.messageBoardContent{
+  height: 90%;
+}
+.messageBoardInput{
+  height: 10%;
+}
