@@ -10,3 +10,10 @@ const messageModelSchema = new Schema({
         max: 140,
     }
 })
+
+
+async function addMessageToDatabase({name, message}){
+    let message_instance = new messageModelSchema({text: message})
+    
+    await message_instance.save()
+}
