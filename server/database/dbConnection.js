@@ -10,8 +10,9 @@ main().catch((err) => console.log(err));
 
 export async function dbConnection() {
     try{
-        await mongoose.connect(mongoURI);
+        const dbConnection = await mongoose.connect(mongoURI);
         console.log("Connection to db successful")
+        return dbConnection
     }
     catch(err){
         console.error(err)
